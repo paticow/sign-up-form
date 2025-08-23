@@ -2,26 +2,44 @@
     --default-bg:#193a3c;
     --other-bg: #213722;
     --light: #dbd5c9;
+    --text-light: #fdfbf0;
+}
+
+@font-face {
+  font-family: "title";
+  src:
+    url("fonts/josephsophia-webfont.woff2") format("woff2"),
+    url("fonts/josephsophia-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "text";
+  src:
+    url("fonts/nk57_monospace_no_lt-webfont.woff2") format("woff2"),
+    url("fonts/nk57_monospace_no_lt-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
 }
 
 body{
+    margin: 0;
+}
+
+#container{
     display: flex;
-    margin: 0%;
-    padding: 0%;
-    height: 800px;
 }
 
 #left-side{
     width: 30%;
     display: flex;
+    justify-content: space-between;
     flex-direction: column;
-    justify-content: center;
-    background-color: var(--default-bg);
-    /*background-image: url(background.jpg);*/
+    background: var(--default-bg) url(background.jpg);
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
-    background-size: 100%;
+    background-size: cover;
 }
 
 #main-side{
@@ -29,7 +47,30 @@ body{
     background-color: var(--other-bg);
 }
 
-h1{
-    background-color: var(--light);
+#logo-txt{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(219, 213, 201, 0.2);
+}
+
+h1{ 
+    font: 60px "title";
     text-align: center;
+    color: var(--text-light);
+}
+
+#icon{
+    height: 150px;
+    width: 150px;
+}
+
+a, a:visited{
+    color: var(--text-light);
+}
+
+#links{
+    color: var(--light);
+    text-align: center;
+    font: 0.8em "text";
 }
