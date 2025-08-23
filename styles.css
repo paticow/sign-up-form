@@ -18,6 +18,16 @@
 @font-face {
   font-family: "text";
   src:
+    url("fonts/questrial-regular-webfont.woff2") format("woff2"),
+    url("fonts/questrial-regular-webfont.woff") format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "links";
+  src:
     url("fonts/nk57_monospace_no_lt-webfont.woff2") format("woff2"),
     url("fonts/nk57_monospace_no_lt-webfont.woff") format("woff");
   font-weight: normal;
@@ -46,12 +56,6 @@ html, body {
     background-size: cover;
 }
 
-#main-side{
-    font-family: "text";   
-    width: 70%;
-    background-color: var(--bg-light);
-}
-
 #logo-txt{
     display: flex;
     align-items: center;
@@ -59,8 +63,8 @@ html, body {
     background-color: rgba(25, 58, 60,0.3);
 }
 
-h1{ 
-    font: 60px "title";
+h1{
+    font: 5em "title";
     text-align: center;
     color: var(--text-light);
 }
@@ -77,12 +81,23 @@ a, a:visited{
 #links{
     color: var(--light);
     text-align: center;
-    font: 0.8em "text";
+    font: 0.8em "links";
 }
+
+#main-side{
+    font-family: "text";   
+    width: 70%;
+    background-color: var(--bg-light);
+}
+
 
 #signup-form{
     background-color: var(--dark-green-bg);
     padding: 30px;
     display: flex;
     flex-direction: column;
+}
+
+h2{
+    font-weight: 100;
 }

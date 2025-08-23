@@ -3,21 +3,9 @@
 
 
 @font-face {
-    font-family: 'josephsophiaregular';
-    src: url('josephsophia-webfont.woff2') format('woff2'),
-         url('josephsophia-webfont.woff') format('woff');
-    font-weight: normal;
-    font-style: normal;
-
-}
-
-
-
-
-@font-face {
-    font-family: 'nk57_monospacelight';
-    src: url('nk57_monospace_no_lt-webfont.woff2') format('woff2'),
-         url('nk57_monospace_no_lt-webfont.woff') format('woff');
+    font-family: 'questrialregular';
+    src: url('questrial-regular-webfont.woff2') format('woff2'),
+         url('questrial-regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
