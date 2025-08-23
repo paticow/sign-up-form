@@ -1,0 +1,35 @@
+:root{
+    --default-bg:#193a3c;
+    --other-bg: #213722;
+    --light: #dbd5c9;
+}
+
+body{
+    display: flex;
+    margin: 0%;
+    padding: 0%;
+    height: 800px;
+}
+
+#left-side{
+    width: 30%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    background-color: var(--default-bg);
+    /*background-image: url(background.jpg);*/
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: 100%;
+}
+
+#main-side{
+    width: 70%;
+    background-color: var(--other-bg);
+}
+
+h1{
+    background-color: var(--light);
+    text-align: center;
+}
