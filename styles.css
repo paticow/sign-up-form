@@ -1,8 +1,9 @@
 :root{
     --default-bg:#193a3c;
-    --other-bg: #213722;
+    --dark-green-bg: #213722;
     --light: #dbd5c9;
     --text-light: #fdfbf0;
+    --bg-light: #f3eef1;
 }
 
 @font-face {
@@ -23,12 +24,15 @@
   font-style: normal;
 }
 
-body{
-    margin: 0;
+html, body {
+    height: 100%;
+    margin: 0; 
+    padding: 0;
 }
 
 #container{
     display: flex;
+    height: 100%;
 }
 
 #left-side{
@@ -43,15 +47,16 @@ body{
 }
 
 #main-side{
+    font-family: "text";   
     width: 70%;
-    background-color: var(--other-bg);
+    background-color: var(--bg-light);
 }
 
 #logo-txt{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: rgba(219, 213, 201, 0.2);
+    background-color: rgba(25, 58, 60,0.3);
 }
 
 h1{ 
@@ -73,4 +78,11 @@ a, a:visited{
     color: var(--light);
     text-align: center;
     font: 0.8em "text";
+}
+
+#signup-form{
+    background-color: var(--dark-green-bg);
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
 }
