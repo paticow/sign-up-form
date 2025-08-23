@@ -1,9 +1,11 @@
 :root{
     --default-bg:#193a3c;
     --dark-green-bg: #213722;
+    --light-green-bg: #d5e6ab;
     --light: #dbd5c9;
     --text-light: #fdfbf0;
     --bg-light: #f3eef1;
+    --link-pink: #d56989;
 }
 
 @font-face {
@@ -64,9 +66,10 @@ html, body {
 }
 
 h1{
-    font: 5em "title";
+    font: 6em "title";
     text-align: center;
     color: var(--text-light);
+    margin: 0;
 }
 
 #icon{
@@ -75,7 +78,8 @@ h1{
 }
 
 a, a:visited{
-    color: var(--text-light);
+    color: var(--link-pink);
+    text-decoration: none;
 }
 
 #links{
@@ -84,20 +88,40 @@ a, a:visited{
     font: 0.8em "links";
 }
 
+
 #main-side{
     font-family: "text";   
     width: 70%;
     background-color: var(--bg-light);
-}
-
-
-#signup-form{
-    background-color: var(--dark-green-bg);
-    padding: 30px;
     display: flex;
     flex-direction: column;
+    justify-content: center;
+}
+
+#signup-form{
+    background-color: var(--light-green-bg);
+    padding: 30px;
 }
 
 h2{
     font-weight: 100;
+}
+
+.password{
+    border-color: red;
+}
+
+button{
+    background-color: var(--dark-green-bg);
+    color: var(--text-light);
+    font: 1.5em "text";
+    height: 60px;
+    width: 260px;
+    border-style: none;
+    border-radius: 16px;
+}
+
+input:focus{
+    border-color: blue;
+    box-shadow: 10px black;
 }
