@@ -1,7 +1,8 @@
 :root{
     --default-bg:#193a3c;
     --dark-green-bg: #213722;
-    --light-green-bg: #d5e6ab;
+    --light-green-bg: #677d6a;
+    --shadow-green: #3a4b41;
     --light: #dbd5c9;
     --text-light: #fdfbf0;
     --bg-light: #f3eef1;
@@ -65,6 +66,7 @@ html, body {
     display: flex;
     align-items: center;
     justify-content: center;
+    padding: 10px;
     background-color: rgba(25, 58, 60,0.3);
 }
 
@@ -83,22 +85,32 @@ h1{
 a, a:visited{
     color: var(--link-pink);
     text-decoration: none;
+    font-size: 1em;
 }
 
 #links{
     color: var(--light);
     text-align: center;
-    font: 0.8em "links";
+    font: 1em "links";
 }
 
 
 #main-side{
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
     font-family: "text";   
     width: 70%;
     background-color: var(--bg-light);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
+}
+
+h2{
+    font-weight: 100;
+    margin-bottom: 20px;
+}
+
+#intro-text{
+    padding: 30px;
 }
 
 #signup-form{
@@ -106,39 +118,40 @@ a, a:visited{
     padding: 30px;
     display: flex;
     flex-direction: column;
+    box-shadow: 2px 3px 2px var(--shadow-green);
+    color: var(--text-light);
 }
 
+h3{
+    margin-left: 20px;
+    font-size: 26px;
+}
 
 .form-row{
     display: flex;
     width: 50%;
+    margin-left: 20px;
+    gap: 50px;
     justify-content: space-evenly;
 }
 
-h2{
-    font-weight: 100;
-}
-
-button{
-    background-color: var(--dark-green-bg);
-    color: var(--text-light);
-    font: 1.5em "text";
-    height: 60px;
-    width: 260px;
-    border-style: none;
-    border-radius: 16px;
-}
 
 input, label{
   width: 300px;
   height: 30px;
-  margin: 10px;
+  margin-bottom: 10px;
+}
+
+label{
+  font-size: 18px;
 }
 
 input[type=text], input[type=password], input[type=email], input[type=tel]{
   box-sizing: border-box;
   border: 2px solid #ccc;
   outline: none;
+  font: 1em "text";
+  border-radius: 5px;
 }
 
 input[type=password]:invalid{
@@ -150,5 +163,20 @@ input[type=password]:invalid{
 
 input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=tel]:focus{
     border: 2px solid var(--focus-blue);
-    box-shadow: 10px black;
+    box-shadow: 2px 2px 2px var(--shadow-green);
+}
+
+#submission{
+  margin-left: 40px;
+  border-top: 0;
+}
+
+button{
+    background-color: var(--dark-green-bg);
+    color: var(--text-light);
+    font: 1.5em "text";
+    height: 60px;
+    width: 260px;
+    border-style: none;
+    border-radius: 16px;
 }
