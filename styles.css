@@ -6,6 +6,9 @@
     --text-light: #fdfbf0;
     --bg-light: #f3eef1;
     --link-pink: #d56989;
+    --error-red: #7f0303;
+    --focus-blue: #96c0ce;
+    
 }
 
 @font-face {
@@ -107,10 +110,6 @@ h2{
     font-weight: 100;
 }
 
-.password{
-    border-color: red;
-}
-
 button{
     background-color: var(--dark-green-bg);
     color: var(--text-light);
@@ -121,7 +120,21 @@ button{
     border-radius: 16px;
 }
 
-input:focus{
-    border-color: blue;
+input[type=text], input[type=password], input[type=email], input[type=tel]{
+  box-sizing: border-box;
+  border: 2px solid #ccc;
+  outline: none;
+}
+
+input[type=password]:invalid{
+  box-sizing: border-box;
+  border: 2px solid var(--error-red);
+  outline: none;
+}
+
+
+input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, input[type=tel]:focus{
+    border: 2px solid var(--focus-blue);
     box-shadow: 10px black;
 }
+
