@@ -113,7 +113,7 @@ h2{
     padding: 30px;
 }
 
-#signup-form{
+#form-container{
     background-color: var(--light-green-bg);
     padding: 30px;
     display: flex;
@@ -179,4 +179,11 @@ button{
     width: 260px;
     border-style: none;
     border-radius: 16px;
+    margin-top: 20px;
+}
+
+button:hover{
+  background-color: var(--text-light);
+  color: var(--dark-green-bg);
+  border: 1px solid var(--dark-green-bg);
 }
