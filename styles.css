@@ -104,6 +104,15 @@ a, a:visited{
 #signup-form{
     background-color: var(--light-green-bg);
     padding: 30px;
+    display: flex;
+    flex-direction: column;
+}
+
+
+.form-row{
+    display: flex;
+    width: 50%;
+    justify-content: space-evenly;
 }
 
 h2{
@@ -118,6 +127,12 @@ button{
     width: 260px;
     border-style: none;
     border-radius: 16px;
+}
+
+input, label{
+  width: 300px;
+  height: 30px;
+  margin: 10px;
 }
 
 input[type=text], input[type=password], input[type=email], input[type=tel]{
@@ -137,4 +152,3 @@ input[type=text]:focus, input[type=password]:focus, input[type=email]:focus, inp
     border: 2px solid var(--focus-blue);
     box-shadow: 10px black;
 }
-
